@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{	int i, arr[5];
+	float farr[10];
+	printf("\nNhap 5 gia tri:\n");
+	for(i = 0; i < 5; i++){
+		scanf("%d", &arr[i]);		
+	}
+	for(i = 0; i < 10; i++)	{
+		if(i < 5)
+			farr[i] = arr[i];
+		else
+			farr[i] = 0;
+	}
+	printf("\nCac gia tri sau chuyen doi la: ");
+	for(i = 0; i < 10; i++)	{
+		printf("%.0f, ", farr[i]);		
+	}	
+	return 0;
+}

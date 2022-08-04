@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct details
+{
+	char name[30];
+} student[5];
+
+int main()
+{
+	int i;
+	for(i = 0; i < 5; i++)
+	{	printf("\nName of student: ");
+		gets(student[i].name);
+	}
+	printf("\n---------------------------------\n");
+	printf("\nList of students:\n");
+	for(int i = 0; i < 5; i++)
+	{	printf("%s\n", student[i].name);
+	}
+return 0;
+}
